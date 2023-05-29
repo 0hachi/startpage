@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://em-content.zobj.net/thumbs/120/apple/354/star_2b50.png"
+    />
+    <title>startpage</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="current-time" lang="ja-jp">蜘蛛大嫌</h1>
+    <div class="apps">
+      <div>
+        <h1>👩‍💻 Dev</h1>
+        <ul>
+          <li><a href="https://www.github.com">Github</a></li>
+          <li><a href="https://medium.com">Medium</a></li>
+          <li><a href="https://stackoverflow.com/">StackOverflow</a></li>
+          <li><a href="https://stackshare.io/stacks">StackShare</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>👩‍🎨 Art</h1>
+        <ul>
+          <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.pixiv.net">Pixiv</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>🐧 Linux</h1>
+        <ul>
+          <li><a href="https://wiki.archlinux.org/">Arch Wiki</a></li>
+          <li><a href="https://distrowatch.com/">Distrowatch</a></li>
+          <li><a href="https://www.cyberciti.biz/">Nixcraft</a></li>
+          <li><a href="https://itsfoss.com/">It's FOSS</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>🧋 Blogs</h1>
+        <ul>
+          <li><a href="https://wowana.me/blog">Wowaname</a></li>
+          <li><a href="https://maia.crimew.gay/posts">Maia</a></li>
+          <li><a href="https://kiyoshi.games/blog.html">Kiyoshi</a></li>
+          <li><a href="https://webb.spiderden.org">Webb</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>🔧 Tools</h1>
+        <ul>
+          <li><a href="https://urls.wtf">Shortener</a></li>
+          <li><a href="https://ggntw.com/steam">GGNetwork</a></li>
+          <li><a href="https://color.adobe.com">Adobe Color</a></li>
+          <li><a href="https://chat.openai.com">ChatGPT</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h1>📦 Misc</h1>
+        <ul>
+          <li><a href="https://www.amazon.com">Amazon</a></li>
+          <li><a href="https://www.etsy.com">Etsy</a></li>
+          <li><a href="https://www.youtube.com">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function updateTime() {
+    document.getElementById('current-time').textContent =
+      '蜘蛛大嫌 — ' +
+      new Date().toLocaleTimeString('it-IT', {
+        timeZone: 'Europe/Rome',
+        hour12: false,
+      });
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
